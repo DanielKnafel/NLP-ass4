@@ -633,10 +633,10 @@
 #id: sent70
 #text: STOCKTON-ON-TEES , England ( AP ) _ Michael Minns received $160 , 000 from the father he never knew and thought was killed in World War II .
 1	STOCKTON	stockton	NNP	PROPN	5	compound	B	GPE
-2	-	-	HYPH	PUNCT	5	punct	O	
-3	ON	on	NNP	PROPN	5	compound	O	
-4	-	-	HYPH	PUNCT	5	punct	O	
-5	TEES	tees	NNP	PROPN	14	nsubj	O	
+2	-	-	HYPH	PUNCT	5	punct	I	GPE
+3	ON	on	NNP	PROPN	5	compound	I	GPE
+4	-	-	HYPH	PUNCT	5	punct	I	GPE
+5	TEES	tees	NNP	PROPN	14	nsubj	I	GPE
 6	,	,	,	PUNCT	5	punct	O	
 7	England	england	NNP	PROPN	14	nsubj	B	GPE
 8	(	(	-LRB-	PUNCT	9	punct	O	
@@ -824,7 +824,7 @@
 14	the	the	DT	DET	15	det	O	
 15	reversal	reversal	NN	NOUN	13	pobj	O	
 16	of	of	IN	ADP	15	prep	O	
-17	Khrushchev	khrushchev	NNP	PROPN	19	poss	B	GPE
+17	Khrushchev	khrushchev	NNP	PROPN	19	poss	B	PERSON
 18	's	's	POS	PART	17	case	O	
 19	order	order	NN	NOUN	16	pobj	O	
 20	,	,	,	PUNCT	10	punct	O	
@@ -925,7 +925,7 @@
 1	The	the	DT	DET	2	det	O	
 2	book	book	NN	NOUN	3	nsubj	O	
 3	said	say	VBD	VERB	0	ROOT	O	
-4	Khrushchev	khrushchev	NNP	PROPN	6	poss	B	GPE
+4	Khrushchev	khrushchev	NNP	PROPN	6	poss	B	PERSON
 5	's	's	POS	PART	4	case	O	
 6	order	order	NN	NOUN	12	nsubjpass	O	
 7	to	to	TO	PART	8	aux	O	
@@ -1455,9 +1455,9 @@
 #text: Britain 's Duchess of York and former Philippines first lady Imelda Marcos topped the list by Blackwell , a designer and self-appointed fashion arbiter whose real name is Richard Sylvan Selzer .
 1	Britain	britain	NNP	PROPN	3	poss	B	GPE
 2	's	's	POS	PART	1	case	O	
-3	Duchess	duchess	NN	NOUN	13	nsubj	B	ORG
-4	of	of	IN	ADP	3	prep	I	ORG
-5	York	york	NNP	PROPN	4	pobj	I	ORG
+3	Duchess	duchess	NN	NOUN	13	nsubj	B	PERSON
+4	of	of	IN	ADP	3	prep	I	PERSON
+5	York	york	NNP	PROPN	4	pobj	I	PERSON
 6	and	and	CC	CONJ	5	cc	O	
 7	former	former	JJ	ADJ	8	amod	O	
 8	Philippines	philippines	NNPS	PROPN	10	nmod	B	GPE
@@ -3124,8 +3124,8 @@
 
 #id: sent493
 #text: Ms. Toth , a 14-year veteran of the Legislature , decided against renting a house for the session , opting for hotel rooms and commuting about 60 miles from her Germantown home because ` ` if something came up this week or next week , I would walk out. ' '
-1	Ms.	ms.	NNP	PROPN	2	compound	O	
-2	Toth	toth	NNP	PROPN	11	nsubj	B	PERSON
+1	Ms.	ms.	NNP	PROPN	2	compound	B	PERSON
+2	Toth	toth	NNP	PROPN	11	nsubj	I	PERSON
 3	,	,	,	PUNCT	2	punct	O	
 4	a	a	DT	DET	6	det	O	
 5	14-year	14-year	JJ	ADJ	6	amod	O	
@@ -3290,8 +3290,8 @@
 4	William	william	NNP	PROPN	5	compound	B	PERSON
 5	O	o	NNP	PROPN	8	poss	I	PERSON
 6	'	'	POS	PART	5	case	I	PERSON
-7	Brien	brien	NNP	PROPN	8	compound	B	ORG
-8	III	iii	NNP	PROPN	9	nsubj	I	ORG
+7	Brien	brien	NNP	PROPN	8	compound	I	PERSON
+8	III	iii	NNP	PROPN	9	nsubj	I	PERSON
 9	set	set	VBD	VERB	0	ROOT	O	
 10	a	a	DT	DET	14	det	O	
 11	Feb.	feb.	NNP	PROPN	14	nmod	B	DATE
@@ -4851,10 +4851,10 @@
 3	,	,	,	PUNCT	2	punct	O	
 4	governor	governor	NN	NOUN	2	appos	O	
 5	of	of	IN	ADP	4	prep	O	
-6	the	the	DT	DET	9	det	B	GPE
-7	Upper	upper	NNP	PROPN	8	compound	I	GPE
+6	the	the	DT	DET	9	det	O
+7	Upper	upper	NNP	PROPN	8	compound	B	GPE
 8	Nile	nile	NNP	PROPN	9	compound	I	GPE
-9	region	region	NN	NOUN	5	pobj	O	
+9	region	region	NN	NOUN	5	pobj	I	GPE
 10	,	,	,	PUNCT	11	punct	O	
 11	told	tell	VBD	VERB	0	ROOT	O	
 12	reporters	reporter	NNS	NOUN	11	dobj	O	
@@ -4928,8 +4928,8 @@
 3	to	to	IN	ADP	2	prep	O	
 4	prominence	prominence	NN	NOUN	3	pobj	O	
 5	after	after	IN	ADP	2	prep	O	
-6	Mrs.	mrs.	NNP	PROPN	7	compound	O	
-7	Parks	parks	NNP	PROPN	9	poss	B	PERSON
+6	Mrs.	mrs.	NNP	PROPN	7	compound	B	PERSON
+7	Parks	parks	NNP	PROPN	9	poss	I	PERSON
 8	'	'	POS	PART	7	case	O	
 9	action	action	NN	NOUN	5	pobj	O	
 10	in	in	IN	ADP	9	prep	O	
@@ -5009,8 +5009,8 @@
 19	with	with	IN	ADP	18	prep	O	
 20	resistance	resistance	NN	NOUN	21	compound	O	
 21	leader	leader	NN	NOUN	24	compound	O	
-22	Prince	prince	NNP	PROPN	24	compound	O	
-23	Norodom	norodom	NNP	PROPN	24	compound	B	PERSON
+22	Prince	prince	NNP	PROPN	24	compound	B	PERSON
+23	Norodom	norodom	NNP	PROPN	24	compound	I	PERSON
 24	Sihanouk	sihanouk	NNP	PROPN	19	pobj	I	PERSON
 25	,	,	,	PUNCT	26	punct	O	
 26	said	say	VBD	VERB	0	ROOT	O	
@@ -5022,8 +5022,8 @@
 32	in	in	IN	ADP	31	prep	O	
 33	Thailand	thailand	NNP	PROPN	32	pobj	B	GPE
 34	,	,	,	PUNCT	29	punct	O	
-35	Prince	prince	NNP	PROPN	37	compound	O	
-36	Norodom	norodom	NNP	PROPN	37	compound	B	PERSON
+35	Prince	prince	NNP	PROPN	37	compound	B	PER
+36	Norodom	norodom	NNP	PROPN	37	compound	I	PERSON
 37	Ranariddh	ranariddh	NNP	PROPN	29	appos	I	PERSON
 38	.	.	.	PUNCT	26	punct	O	
 
@@ -5790,7 +5790,7 @@
 22	Carlos	carlos	NNP	PROPN	24	compound	B	PERSON
 23	Andres	andres	NNP	PROPN	24	compound	I	PERSON
 24	Perez	perez	NNP	PROPN	27	poss	I	PERSON
-25	's	's	POS	PART	24	case	I	PERSON
+25	's	's	POS	PART	24	case	O
 26	presidential	presidential	JJ	ADJ	27	amod	O	
 27	inauguration	inauguration	NN	NOUN	21	pobj	O	
 28	on	on	IN	ADP	27	prep	O	
@@ -6136,7 +6136,7 @@
 1	In	in	IN	ADP	7	prep	O	
 2	San	san	NNP	PROPN	3	compound	B	GPE
 3	Bernardino	bernardino	NNP	PROPN	4	compound	I	GPE
-4	County	county	NNP	PROPN	1	pobj	O	
+4	County	county	NNP	PROPN	1	pobj	I	GPE
 5	,	,	,	PUNCT	7	punct	O	
 6	winds	wind	NNS	NOUN	7	nsubj	O	
 7	ripped	rip	VBD	VERB	27	ccomp	O	
@@ -6303,8 +6303,8 @@
 24	Viscomi	viscomi	NNP	PROPN	21	appos	I	PERSON
 25	,	,	,	PUNCT	21	punct	O	
 26	of	of	IN	ADP	21	prep	O	
-27	Niagara	niagara	NNP	PROPN	28	compound	B	ORG
-28	Falls	falls	NNP	PROPN	26	pobj	I	ORG
+27	Niagara	niagara	NNP	PROPN	28	compound	B	LOC
+28	Falls	falls	NNP	PROPN	26	pobj	I	LOC
 29	.	.	.	PUNCT	9	punct	O	
 
 #id: sent1050
@@ -8364,8 +8364,8 @@
 2	southwest	southwest	JJ	ADJ	3	compound	O	
 3	Louisiana	louisiana	NNP	PROPN	6	poss	B	GPE
 4	's	's	POS	PART	3	case	O	
-5	Cameron	cameron	NNP	PROPN	6	compound	B	FAC
-6	Parish	parish	NNP	PROPN	1	pobj	I	FAC
+5	Cameron	cameron	NNP	PROPN	6	compound	B	LOC
+6	Parish	parish	NNP	PROPN	1	pobj	I	LOC
 7	(	(	-LRB-	PUNCT	8	punct	O	
 8	county	county	NN	NOUN	6	appos	O	
 9	)	)	-RRB-	PUNCT	8	punct	O	
@@ -8439,15 +8439,15 @@
 #id: sent1483
 #text: The Quayles ' children _ Tucker , 15 , Benjamin , 12 , and Corinne , 10 _ live on the top floor of the three-story building , which is on the rolling grounds of the Naval Observatory in northwest Washington and was built in 1894.
 1	The	the	DT	DET	2	det	O	
-2	Quayles	quayles	NNPS	PROPN	4	poss	O	
+2	Quayles	quayles	NNPS	PROPN	4	poss	B	PERSON
 3	'	'	POS	PART	2	case	O	
 4	children	child	NNS	NOUN	19	nsubj	O	
 5	_	_	POS	PART	6	compound	O	
-6	Tucker	tucker	NNP	PROPN	4	appos	O	
+6	Tucker	tucker	NNP	PROPN	4	appos	B	PERSON
 7	,	,	,	PUNCT	6	punct	O	
 8	15	15	CD	NUM	6	conj	B	CARDINAL
 9	,	,	,	PUNCT	6	punct	O	
-10	Benjamin	benjamin	NNP	PROPN	6	conj	O	
+10	Benjamin	benjamin	NNP	PROPN	6	conj	B	PERSON
 11	,	,	,	PUNCT	6	punct	O	
 12	12	12	CD	NUM	6	appos	B	DATE
 13	,	,	,	PUNCT	6	punct	O	
@@ -8475,9 +8475,9 @@
 35	rolling	rolling	JJ	ADJ	36	amod	O	
 36	grounds	ground	NNS	NOUN	33	pobj	O	
 37	of	of	IN	ADP	36	prep	O	
-38	the	the	DT	DET	40	det	B	ORG
-39	Naval	naval	NNP	PROPN	40	compound	I	ORG
-40	Observatory	observatory	NNP	PROPN	37	pobj	I	ORG
+38	the	the	DT	DET	40	det	O
+39	Naval	naval	NNP	PROPN	40	compound	B	GPE
+40	Observatory	observatory	NNP	PROPN	37	pobj	I	GPE
 41	in	in	IN	ADP	40	prep	O	
 42	northwest	northwest	JJ	ADJ	43	compound	O	
 43	Washington	washington	NNP	PROPN	41	pobj	B	GPE
@@ -8697,7 +8697,7 @@
 14	Louisville	louisville	NNP	PROPN	15	compound	B	GPE
 15	suburb	suburb	NN	NOUN	12	pobj	O	
 16	of	of	IN	ADP	15	prep	O	
-17	Okolona	okolona	NNP	PROPN	16	pobj	O	
+17	Okolona	okolona	NNP	PROPN	16	pobj	B	LOC
 18	that	that	IN	ADP	20	mark	O	
 19	she	she	PRP	PRON	20	nsubj	O	
 20	believed	believe	VBD	VERB	8	ccomp	O	

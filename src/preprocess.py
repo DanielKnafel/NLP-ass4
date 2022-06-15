@@ -17,66 +17,6 @@ def read_file(input_file):
     print("Lives in:", lives_in)
     return data
 
-# def read_spacy_file(file_name):
-#     all_data = {}
-#     with open(file_name, 'r') as f:
-#         lines = f.readlines()
-#     for i in range(len(lines)):
-#         if lines[i].startswith('#id'):
-#             data = {'id': lines[i].replace('#id: ', '').strip(), 'text': lines[i+1].replace('#text: ', '').strip(),'persons':[],'locations':[]}
-#         elif lines[i].startswith('#'):
-#             continue
-#         elif lines[i] == '\n':
-#             all_data[data['id']] = data
-#         else:
-#             line = lines[i].strip().split('\t')
-#             if line[7] == 'B':
-#                 if line[8] == 'PERSON':
-#                     person = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'PERSON'}
-#                     for j in range(i+1, len(lines)):
-#                         if lines[j].startswith('#') or lines[j] == '\n':
-#                             break
-#                         else:
-#                             line = lines[j].strip().split('\t')
-#                             if line[7] == 'I':
-#                                 if line[8] == 'PERSON':
-#                                     person['end'] = int(line[0]) - 1
-#                             else:
-#                                 break
-#                     person['text'] = ' '.join(data['text'].split()[person['start']:person['end']+1])
-#                     data['persons'].append(person)
-#                 elif line[8] == 'GPE':
-#                     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'GPE'}
-#                     for j in range(i+1, len(lines)):
-#                         if lines[j].startswith('#') or lines[j] == '\n':
-#                             break
-#                         else:
-#                             line = lines[j].strip().split('\t')
-#                             if line[7] == 'I':
-#                                 if line[8] == 'GPE':
-#                                     location['end'] = int(line[0]) - 1
-#                             else:
-#                                 break
-#                     location['text'] = ' '.join(data['text'].split()[location['start']:location['end']+1])
-#                     data['locations'].append(location)
-#                 elif line[8] == 'LOC':
-#                     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'LOC'}
-#                     for j in range(i+1, len(lines)):
-#                         if lines[j].startswith('#') or lines[j] == '\n':
-#                             break
-#                         else:
-#                             line = lines[j].strip().split('\t')
-#                             if line[7] == 'I':
-#                                 if line[8] == 'LOC':
-#                                     location['end'] = int(line[0]) - 1
-#                             else:
-#                                 break
-#                     location['text'] = ' '.join(data['text'].split()[location['start']:location['end']+1])
-#                     data['locations'].append(location)
-#
-#
-#     return all_data
-#
 
 def read_spacy_file(file_name):
     persons = []
@@ -115,51 +55,6 @@ def read_spacy_file(file_name):
                     person['text'] = ' '.join(data['text'][person['start']:person['end']+1]).replace(' - ','-')
                     data['persons'].append(person)
                     persons.append(person['text'])
-                # elif line[8] == 'GPE':
-                #     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'GPE'}
-                #     for j in range(i+1, len(lines)):
-                #         if lines[j].startswith('#') or lines[j] == '\n':
-                #             break
-                #         else:
-                #             line = lines[j].strip().split('\t')
-                #             if line[7] == 'I':
-                #                 if line[8] == 'GPE':
-                #                     location['end'] = int(line[0]) - 1
-                #             else:
-                #                 break
-                #     location['text'] = ' '.join(data['text'][location['start']:location['end']+1])
-                #     data['locations'].append(location)
-                #     locations.append(location['text'])
-                # elif line[8] == 'LOC':
-                #     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'LOC'}
-                #     for j in range(i+1, len(lines)):
-                #         if lines[j].startswith('#') or lines[j] == '\n':
-                #             break
-                #         else:
-                #             line = lines[j].strip().split('\t')
-                #             if line[7] == 'I':
-                #                 if line[8] == 'LOC':
-                #                     location['end'] = int(line[0]) - 1
-                #             else:
-                #                 break
-                #     location['text'] = ' '.join(data['text'][location['start']:location['end']+1])
-                #     data['locations'].append(location)
-                #     locations.append(location['text'])
-                # elif line[8] == 'NORP':
-                #     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': 'NORP'}
-                #     for j in range(i+1, len(lines)):
-                #         if lines[j].startswith('#') or lines[j] == '\n':
-                #             break
-                #         else:
-                #             line = lines[j].strip().split('\t')
-                #             if line[7] == 'I':
-                #                 if line[8] == 'NORP':
-                #                     location['end'] = int(line[0]) - 1
-                #             else:
-                #                 break
-                #     location['text'] = ' '.join(data['text'][location['start']:location['end']+1])
-                #     data['locations'].append(location)
-                #     locations.append(location['text'])
                 elif line[8] == 'GPE' or line[8] == 'LOC' or line[8] == 'NORP':
                     type = line[8]
                     location = {'start': int(line[0]) -1,'end':int(line[0]) -1,  'type': type}
@@ -176,9 +71,6 @@ def read_spacy_file(file_name):
                     location['text'] = ' '.join(data['text'][location['start']:location['end']+1]).replace(' - ','-')
                     data['locations'].append(location)
                     locations.append(location['text'])
-
-
-
 
     return all_data, persons, locations
 
@@ -308,17 +200,17 @@ get_True_False_RE_from_files('../data/Corpus.TRAIN.txt','../data/TRAIN.annotatio
 train_data1,persons,locations = read_spacy_file('../data/Corpus.TRAIN.processed')
 train_tuples = tuples_annotations_from_data(train_data1)
 
-dev_data1,persons_dev,locations_dev = read_spacy_file('../data/Corpus.DEV.processed')
-dev_tuples = tuples_annotations_from_data(dev_data1)
+# dev_data1,persons_dev,locations_dev = read_spacy_file('../data/Corpus.DEV.processed')
+# dev_tuples = tuples_annotations_from_data(dev_data1)
 
 train_data = get_dataset_from_file_and_tuples('../data/TRAIN.annotations', train_tuples)
-dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples)
+# dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples)
 
 marked_train_data = get_dataset_from_file_and_tuples('../data/TRAIN.annotations', train_tuples,marker=True)
-marked_dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples,marker=True)
+# marked_dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples,marker=True)
 
 train_data_from_annotations = read_file('../data/TRAIN.annotations')
-dev_data_from_annotations = read_file('../data/DEV.annotations')
+# dev_data_from_annotations = read_file('../data/DEV.annotations')
 
 
 
