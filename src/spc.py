@@ -1,33 +1,27 @@
-import codecs 
-import spacy 
-import sys
+def file_to_dict(file):
+    dic = {}
+    with open(file, 'r') as f:
+        lines = f.readlines()
+    for line in lines:
+        line = line.strip().split('\t')
+        if line[0] not in dic:
+            dic[line[0]] = [(line[1], line[2], line[3])]
+        else:
+            dic[line[0]].append((line[1], line[2], line[3]))
+    return dic
+
+def get_data_from_dict_and_file(dic, file):
+    data = []
+    with open(file, 'r') as f:
+        lines = f.readlines()
+    for line in lines:
+        line = line.strip().split('\t')
+        if line[0] in dic:
+
+            for d in dic[line[0]]:
+                data.append({'idx': line[0], 'sent1': line[1], 'sent2': line[2], 'label': line[3]})
+    return data
 
 
-nlp = spacy.load('en')
-
-def read_lines(fname):
-    for line in codecs.open(fname, encoding="utf8"):
-        sent_id, sent = line.strip().split("\t")
-        sent = sent.replace("-LRB-","(")
-        sent = sent.replace("-RRB-",")")
-        yield sent_id, sent
-
-for sent_id, sent_str in read_lines(sys.argv[1]):
-    sent = nlp(sent_str)
-    print "#id:",sent_id
-    print "#text:",sent.text
-    for word in sent:
-        head_id = str(word.head.i+1)        # we want ids to be 1 based
-        if word == word.head:               # and the ROOT to be 0.
-            assert(word.dep_=="ROOT"),word.dep_
-            head_id = "0" # root
-        print "\t".join([str(word.i+1), word.text, word.lemma_, word.tag_, word.pos_, head_id, word.dep_, word.ent_iob_, word.ent_type_])
-    print
-    # print "#", Noun Chunks:
-    # for np in sent.noun_chunks:
-    #    print(np.text, np.root.text, np.root.dep_, np.root.head.text)
-    # print "#", named entities:
-    # for ne in sent.ents:
-    #    print(ne.text, ne.root.ent_type_, ne.root.text, ne.root.dep_, ne.root.head.text)
-
-
+train_annotations = file_to_dict('../data/TRAIN.annotations')
+dev_annotations = file_to_dict('../data/DEV.annotations')

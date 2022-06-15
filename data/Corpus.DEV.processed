@@ -3547,8 +3547,8 @@
 
 #id: sent1656
 #text: Mrs. Tsuruyama is from Yatsushiro in Kumamoto Prefecture in southern Japan .
-1	Mrs.	mrs.	NNP	PROPN	2	compound	O	
-2	Tsuruyama	tsuruyama	NNP	PROPN	3	nsubj	B	PERSON
+1	Mrs.	mrs.	NNP	PROPN	2	compound	B	PERSON
+2	Tsuruyama	tsuruyama	NNP	PROPN	3	nsubj	I	PERSON
 3	is	be	VBZ	VERB	0	ROOT	O	
 4	from	from	IN	ADP	3	prep	O	
 5	Yatsushiro	yatsushiro	NNP	PROPN	4	pobj	B	GPE
@@ -3639,8 +3639,8 @@
 35	'	'	''	PUNCT	28	punct	O	
 36	'	'	''	PUNCT	37	punct	O	
 37	said	say	VBD	VERB	0	ROOT	O	
-38	Texas	texas	NNP	PROPN	40	compound	B	ORG
-39	Agriculture	agriculture	NNP	PROPN	40	compound	I	ORG
+38	Texas	texas	NNP	PROPN	40	compound	B	GPE
+39	Agriculture	agriculture	NNP	PROPN	40	compound	O
 40	Commissioner	commissioner	NNP	PROPN	42	compound	O	
 41	Jim	jim	NNP	PROPN	42	compound	B	PERSON
 42	Hightower	hightower	NNP	PROPN	37	nsubj	I	PERSON
@@ -4717,8 +4717,8 @@
 18	medical	medical	JJ	ADJ	19	amod	O	
 19	technician	technician	NN	NOUN	14	appos	O	
 20	on	on	IN	ADP	19	prep	O	
-21	High	high	NNP	PROPN	22	compound	O	
-22	Island	island	NNP	PROPN	20	pobj	O	
+21	High	high	NNP	PROPN	22	compound	B	LOC
+22	Island	island	NNP	PROPN	20	pobj	I	LOC
 23	.	.	.	PUNCT	12	punct	O	
 
 #id: sent1895
@@ -4770,8 +4770,8 @@
 19	who	who	WP	NOUN	20	nsubj	O	
 20	remained	remain	VBD	VERB	18	relcl	O	
 21	on	on	IN	ADP	20	prep	O	
-22	High	high	NNP	PROPN	23	compound	O	
-23	Island	island	NNP	PROPN	21	pobj	O	
+22	High	high	NNP	PROPN	23	compound	B	LOC
+23	Island	island	NNP	PROPN	21	pobj	I	LOC
 24	.	.	.	PUNCT	12	punct	O	
 
 #id: sent1902
@@ -4781,8 +4781,8 @@
 3	out	out	RP	PART	2	prt	O	
 4	power	power	NN	NOUN	2	dobj	O	
 5	on	on	IN	ADP	2	prep	O	
-6	High	high	NNP	PROPN	7	compound	O	
-7	Island	island	NNP	PROPN	5	pobj	O	
+6	High	high	NNP	PROPN	7	compound	B	LOC
+7	Island	island	NNP	PROPN	5	pobj	I	LOC
 8	shortly	shortly	RB	ADV	9	advmod	O	
 9	after	after	IN	ADP	2	prep	O	
 10	7	7	CD	NUM	11	nummod	B	TIME
@@ -4801,8 +4801,8 @@
 23	a	a	DT	DET	24	det	O	
 24	grocery	grocery	NN	NOUN	22	pobj	O	
 25	where	where	WRB	ADV	28	advmod	O	
-26	Ms.	ms.	NNP	PROPN	27	compound	O	
-27	Barrow	barrow	NNP	PROPN	28	nsubj	B	PERSON
+26	Ms.	ms.	NNP	PROPN	27	compound	B	PERSON
+27	Barrow	barrow	NNP	PROPN	28	nsubj	I	PERSON
 28	was	be	VBD	VERB	24	relcl	O	
 29	on	on	IN	ADP	28	prep	O	
 30	duty	duty	NN	NOUN	29	pobj	O	
@@ -6515,7 +6515,7 @@
 
 #id: sent2255
 #text: Anderson , 41 , was the chief Middle East correspondent for The Associated Press when he was kidnapped in Beirut on March 16 , 1985.
-1	Anderson	anderson	NNP	PROPN	5	nsubj	B	ORG
+1	Anderson	anderson	NNP	PROPN	5	nsubj	B	PERSON
 2	,	,	,	PUNCT	1	punct	O	
 3	41	41	CD	NUM	1	appos	B	DATE
 4	,	,	,	PUNCT	5	punct	O	
@@ -6736,7 +6736,7 @@
 52	State	state	NNP	PROPN	54	compound	I	ORG
 53	Psychiatric	psychiatric	NNP	PROPN	54	compound	I	ORG
 54	Hospital	hospital	NNP	PROPN	50	pobj	I	ORG
-55	in	in	IN	ADP	54	prep	O	
+55	in	in	IN	ADP	54	prep	O
 56	Hammonton	hammonton	NNP	PROPN	55	pobj	B	GPE
 57	.	.	.	PUNCT	11	punct	O	
 
@@ -7458,7 +7458,7 @@
 
 #id: sent2536
 #text: Harrington , a professor of political science at Queens College of the City University of New York and honorary president of the Socialist International , died Monday night at his home in suburban Larchmont , the university said in a statement Tuesday.
-1	Harrington	harrington	NNP	PROPN	26	nsubj	B	ORG
+1	Harrington	harrington	NNP	PROPN	26	nsubj	B	PERSON
 2	,	,	,	PUNCT	1	punct	O	
 3	a	a	DT	DET	4	det	O	
 4	professor	professor	NN	NOUN	1	appos	O	
@@ -8257,7 +8257,7 @@
 
 #id: sent2817
 #text: Warner , who now lives in Ocala , Fla. , and filed the petition in U.S. Bankruptcy Court in Jacksonville , Fla. , sought protection from creditors seeking more than $4 billion from him.
-1	Warner	warner	NNP	PROPN	24	nsubj	B	ORG
+1	Warner	warner	NNP	PROPN	24	nsubj	B	PERSON
 2	,	,	,	PUNCT	1	punct	O	
 3	who	who	WP	NOUN	5	nsubj	O	
 4	now	now	RB	ADV	5	advmod	O	
@@ -8296,7 +8296,7 @@
 
 #id: sent2820
 #text: Warner , a former U.S. ambassador to Switzerland , was convicted on Ohio felony charges in Home State 's collapse , but was acquitted of federal charges in a separate trial.
-1	Warner	warner	NNP	PROPN	11	nsubjpass	B	ORG
+1	Warner	warner	NNP	PROPN	11	nsubjpass	B	PERSON
 2	,	,	,	PUNCT	1	punct	O	
 3	a	a	DT	DET	6	det	O	
 4	former	former	JJ	ADJ	6	amod	O	
@@ -8598,8 +8598,8 @@
 44	the	the	DT	DET	45	det	O	
 45	presidency	presidency	NN	NOUN	43	pobj	O	
 46	of	of	IN	ADP	45	prep	O	
-47	the	the	DT	DET	48	det	O	
-48	Republic	republic	NNP	PROPN	46	pobj	O	
+47	the	the	DT	DET	48	det	B	LOC
+48	Republic	republic	NNP	PROPN	46	pobj	I	LOC
 49	.	.	.	PUNCT	34	punct	O	
 
 #id: sent2884
@@ -8663,10 +8663,10 @@
 #text: Croatia 's Granic Admits Downed Planes Took Off From Croatia LD0303083794 Moscow ITAR-TASS in English 0729 GMT 3 Mar 94
 1	Croatia	croatia	NNP	PROPN	6	poss	B	GPE
 2	's	's	POS	PART	1	case	O	
-3	Granic	granic	NNP	PROPN	6	compound	B	ORG
-4	Admits	admits	NNP	PROPN	6	compound	I	ORG
-5	Downed	downed	NNP	PROPN	6	compound	I	ORG
-6	Planes	planes	NNPS	PROPN	7	nsubj	I	ORG
+3	Granic	granic	NNP	PROPN	6	compound	B	PERSON
+4	Admits	admits	NNP	PROPN	6	compound	O
+5	Downed	downed	NNP	PROPN	6	compound	O
+6	Planes	planes	NNPS	PROPN	7	nsubj	O
 7	Took	take	VBD	VERB	0	ROOT	O	
 8	Off	off	RP	PART	7	prt	O	
 9	From	from	IN	ADP	7	prep	O	
@@ -9456,8 +9456,8 @@
 
 #id: sent3034
 #text: Qian Qichen Leaves Beijing for South Asian Tour OW2102114194 Beijing XINHUA in English 1127 GMT 21 Feb 94
-1	Qian	qian	JJ	ADJ	2	compound	B	ORG
-2	Qichen	qichen	NNP	PROPN	3	nsubj	I	ORG
+1	Qian	qian	JJ	ADJ	2	compound	B	PERSON
+2	Qichen	qichen	NNP	PROPN	3	nsubj	I	PERSON
 3	Leaves	leave	VBZ	VERB	0	ROOT	O	
 4	Beijing	beijing	NNP	PROPN	3	dobj	B	GPE
 5	for	for	IN	ADP	3	prep	O	
@@ -9494,8 +9494,8 @@
 15	Premier	premier	NNP	PROPN	20	nsubj	O	
 16	and	and	CC	CONJ	15	cc	O	
 17	Foreign	foreign	NNP	PROPN	19	compound	O	
-18	Qian	qian	NNP	PROPN	19	compound	O	
-19	Qichen	qichen	NNP	PROPN	15	conj	O	
+18	Qian	qian	NNP	PROPN	19	compound	B	PERSON
+19	Qichen	qichen	NNP	PROPN	15	conj	I	PERSON
 20	left	leave	VBN	VERB	0	ROOT	O	
 21	here	here	RB	ADV	20	advmod	O	
 22	this	this	DT	DET	23	det	O	
@@ -9652,8 +9652,8 @@
 16	Croatian	croatian	JJ	ADJ	17	compound	B	NORP
 17	President	president	NNP	PROPN	14	appos	O	
 18	)	)	-RRB-	PUNCT	17	punct	O	
-19	Franjo	franjo	NNP	PROPN	20	compound	O	
-20	Tudjman	tudjman	NNP	PROPN	21	nsubj	O	
+19	Franjo	franjo	NNP	PROPN	20	compound	B	PERSON
+20	Tudjman	tudjman	NNP	PROPN	21	nsubj	I	PERSON
 21	was	be	VBD	VERB	0	ROOT	O	
 22	so	so	RB	ADV	23	advmod	O	
 23	cheery	cheery	JJ	ADJ	21	acomp	O	

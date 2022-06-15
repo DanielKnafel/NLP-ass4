@@ -702,8 +702,8 @@
 #text: An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy 's naval blockade during the Cuban missile crisis , but the order was reversed just hours before an inevitable confrontation , according to a new book .
 1	An	an	DT	DET	4	det	O	
 2	enraged	enraged	JJ	ADJ	4	amod	O	
-3	Nikita	nikita	NNP	PROPN	4	compound	O	
-4	Khrushchev	khrushchev	NNP	PROPN	5	nsubj	O	
+3	Nikita	nikita	NNP	PROPN	4	compound	B	PERSON
+4	Khrushchev	khrushchev	NNP	PROPN	5	nsubj	I	PERSON
 5	instructed	instruct	VBD	VERB	0	ROOT	O	
 6	Soviet	soviet	JJ	ADJ	7	amod	B	NORP
 7	ships	ship	NNS	NOUN	5	dobj	O	
@@ -836,11 +836,11 @@
 
 #id: sent80
 #text: Mikoyan ` ` preempted Khrushchev 's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line , ' ' they say .
-1	Mikoyan	mikoyan	NNP	PROPN	4	nsubj	O	
+1	Mikoyan	mikoyan	NNP	PROPN	4	nsubj	B	PERSON
 2	`	`	''	PUNCT	4	punct	O	
 3	`	`	''	PUNCT	4	punct	O	
 4	preempted	preempt	VBD	VERB	28	ccomp	O	
-5	Khrushchev	khrushchev	NNP	PROPN	7	poss	B	GPE
+5	Khrushchev	khrushchev	NNP	PROPN	7	poss	B	PERSON
 6	's	's	POS	PART	5	case	O	
 7	order	order	NN	NOUN	4	dobj	O	
 8	to	to	TO	PART	9	aux	O	
@@ -1003,7 +1003,7 @@
 3	authors	author	NNS	NOUN	4	nsubj	O	
 4	suggested	suggest	VBD	VERB	0	ROOT	O	
 5	that	that	IN	ADP	20	mark	O	
-6	Alekseev	alekseev	NNP	PROPN	20	nsubj	B	ORG
+6	Alekseev	alekseev	NNP	PROPN	20	nsubj	B	PERSON
 7	,	,	,	PUNCT	20	punct	O	
 8	along	along	IN	ADP	20	prep	O	
 9	with	with	IN	ADP	8	prep	O	
@@ -1668,10 +1668,10 @@
 18	'	'	''	PUNCT	15	punct	O	
 19	'	'	''	PUNCT	20	punct	O	
 20	said	say	VBD	VERB	0	ROOT	O	
-21	Bingham	bingham	NNP	PROPN	22	compound	B	PERSON
-22	County	county	NNP	PROPN	23	compound	I	PERSON
-23	Sheriff	sheriff	NNP	PROPN	25	poss	I	PERSON
-24	's	's	POS	PART	23	case	I	PERSON
+21	Bingham	bingham	NNP	PROPN	22	compound	B	LOC
+22	County	county	NNP	PROPN	23	compound	I	LOC
+23	Sheriff	sheriff	NNP	PROPN	25	poss	O
+24	's	's	POS	PART	23	case	O
 25	Lt	lt	NNP	PROPN	20	nsubj	O	
 26	.	.	.	PUNCT	20	punct	O	
 27	Bill	bill	NNP	PROPN	28	compound	B	PERSON
@@ -2336,8 +2336,8 @@
 19	and	and	CC	CONJ	18	cc	O	
 20	the	the	DT	DET	21	det	O	
 21	evening	evening	NN	NOUN	23	compound	O	
-22	Tucson	tucson	NNP	PROPN	23	compound	B	WORK_OF_ART
-23	Citizen	citizen	NNP	PROPN	18	conj	I	WORK_OF_ART
+22	Tucson	tucson	NNP	PROPN	23	compound	B	GPE
+23	Citizen	citizen	NNP	PROPN	18	conj	O
 24	,	,	,	PUNCT	2	punct	O	
 25	estimated	estimate	VBD	VERB	0	ROOT	O	
 26	that	that	IN	ADP	25	dobj	O	
@@ -2578,7 +2578,7 @@
 2	agents	agent	NNS	NOUN	3	nsubj	O	
 3	arrived	arrive	VBD	VERB	0	ROOT	O	
 4	at	at	IN	ADP	3	prep	O	
-5	Sohn	sohn	NNP	PROPN	9	poss	B	ORG
+5	Sohn	sohn	NNP	PROPN	9	poss	B	PERSON
 6	's	's	POS	PART	5	case	O	
 7	New	new	NNP	PROPN	8	compound	B	GPE
 8	Jersey	jersey	NNP	PROPN	9	compound	I	GPE
@@ -3592,7 +3592,7 @@
 7	Brian	brian	NNP	PROPN	8	compound	B	PERSON
 8	Michaud	michaud	NNP	PROPN	11	nsubj	I	PERSON
 9	of	of	IN	ADP	8	prep	O	
-10	Millinocket	millinocket	NNP	PROPN	9	pobj	B	ORG
+10	Millinocket	millinocket	NNP	PROPN	9	pobj	B	GPE
 11	hooked	hook	VBD	VERB	0	ROOT	O	
 12	the	the	DT	DET	13	det	O	
 13	men	man	NNS	NOUN	11	dobj	O	
@@ -4195,10 +4195,10 @@
 
 #id: sent652
 #text: Cape Town Supreme Court Judge J.H. Berman refused to give Port Nolloth municipal authorities the right to forcibly remove the squatters , who live in shacks and tents .
-1	Cape	cape	NNP	PROPN	5	compound	B	ORG
-2	Town	town	NNP	PROPN	4	compound	I	ORG
-3	Supreme	supreme	NNP	PROPN	4	compound	I	ORG
-4	Court	court	NNP	PROPN	5	compound	I	ORG
+1	Cape	cape	NNP	PROPN	5	compound	B	GPE
+2	Town	town	NNP	PROPN	4	compound	I	GPE
+3	Supreme	supreme	NNP	PROPN	4	compound	O
+4	Court	court	NNP	PROPN	5	compound	O
 5	Judge	judge	NNP	PROPN	7	compound	O	
 6	J.H.	j.h.	NNP	PROPN	7	compound	B	PERSON
 7	Berman	berman	NNP	PROPN	8	nsubj	I	PERSON
@@ -4273,8 +4273,8 @@
 16	who	who	WP	NOUN	17	nsubj	O	
 17	lives	live	VBZ	VERB	13	relcl	O	
 18	in	in	IN	ADP	17	prep	O	
-19	Rock	rock	NNP	PROPN	20	compound	B	PERSON
-20	Hill	hill	NNP	PROPN	18	pobj	I	PERSON
+19	Rock	rock	NNP	PROPN	20	compound	B	LOC
+20	Hill	hill	NNP	PROPN	18	pobj	I	LOC
 21	,	,	,	PUNCT	13	punct	O	
 22	be	be	VB	VERB	23	auxpass	O	
 23	mailed	mail	VBN	VERB	10	ccomp	O	
@@ -4313,7 +4313,7 @@
 26	Mary	mary	NNP	PROPN	27	compound	B	PERSON
 27	Campbell	campbell	NNP	PROPN	30	nsubj	I	PERSON
 28	of	of	IN	ADP	27	prep	O	
-29	Clover	clover	NNP	PROPN	28	pobj	O	
+29	Clover	clover	NNP	PROPN	28	pobj	B	LOC
 30	is	be	VBZ	VERB	17	ccomp	O	
 31	free	free	JJ	ADJ	30	acomp	O	
 32	to	to	TO	PART	33	aux	O	
@@ -4337,8 +4337,8 @@
 11	Darryl	darryl	NNP	PROPN	12	compound	B	PERSON
 12	Breniser	breniser	NNP	PROPN	17	nsubj	I	PERSON
 13	of	of	IN	ADP	12	prep	O	
-14	Blue	blue	NNP	PROPN	15	compound	B	ORG
-15	Ball	ball	NNP	PROPN	13	pobj	I	ORG
+14	Blue	blue	NNP	PROPN	15	compound	B	LOC
+15	Ball	ball	NNP	PROPN	13	pobj	I	LOC
 16	,	,	,	PUNCT	17	punct	O	
 17	said	say	VBD	VERB	0	ROOT	O	
 18	the	the	DT	DET	22	det	O	
@@ -6838,7 +6838,7 @@
 
 #id: sent1145
 #text: Rochester 's Peter McWalters , named in 1986 , signaled willingness to form a working partnership with teachers .
-1	Rochester	rochester	NNP	PROPN	4	poss	B	ORG
+1	Rochester	rochester	NNP	PROPN	4	poss	B	LOC
 2	's	's	POS	PART	1	case	O	
 3	Peter	peter	NNP	PROPN	4	compound	B	PERSON
 4	McWalters	mcwalters	NNP	PROPN	10	nsubj	I	PERSON
@@ -7039,9 +7039,9 @@
 36	his	his	PRP$	ADJ	37	poss	O	
 37	imprint	imprint	NN	NOUN	35	dobj	O	
 38	on	on	IN	ADP	35	prep	O	
-39	the	the	DT	DET	41	det	B	ORG
-40	White	white	NNP	PROPN	41	compound	I	ORG
-41	House	house	NNP	PROPN	38	pobj	I	ORG
+39	the	the	DT	DET	41	det	O
+40	White	white	NNP	PROPN	41	compound	B	LOC
+41	House	house	NNP	PROPN	38	pobj	I	LOC
 42	.	.	.	PUNCT	22	punct	O	
 
 #id: sent1176
@@ -7537,9 +7537,9 @@
 13	by	by	IN	ADP	9	agent	O	
 14	U.S.	u.s.	NNP	PROPN	18	compound	B	GPE
 15	District	district	NNP	PROPN	16	compound	O	
-16	G.	g.	NNP	PROPN	18	compound	O	
-17	Ernest	ernest	NNP	PROPN	18	compound	O	
-18	Tidwell	tidwell	NNP	PROPN	13	pobj	O	
+16	G.	g.	NNP	PROPN	18	compound	B	PERSON
+17	Ernest	ernest	NNP	PROPN	18	compound	I	PERSON
+18	Tidwell	tidwell	NNP	PROPN	13	pobj	I	PERSON
 19	,	,	,	PUNCT	9	punct	O	
 20	would	would	MD	VERB	21	aux	O	
 21	become	become	VB	VERB	0	ROOT	O	
@@ -7679,8 +7679,8 @@
 16	raid	raid	NN	NOUN	14	pobj	O	
 17	on	on	IN	ADP	16	prep	O	
 18	his	his	PRP$	ADJ	21	poss	O	
-19	Ciudad	ciudad	NNP	PROPN	20	compound	B	ORG
-20	Madero	madero	NNP	PROPN	21	compound	I	ORG
+19	Ciudad	ciudad	NNP	PROPN	20	compound	B	LOC
+20	Madero	madero	NNP	PROPN	21	compound	I	LOC
 21	home	home	NN	NOUN	17	pobj	O	
 22	.	.	.	PUNCT	4	punct	O	
 
@@ -7806,7 +7806,7 @@
 4	is	be	VBZ	VERB	6	aux	O	
 5	really	really	RB	ADV	6	advmod	O	
 6	hurting	hurt	VBG	VERB	17	ccomp	O	
-7	Heuchelheim	heuchelheim	NNP	PROPN	6	dobj	B	PERSON
+7	Heuchelheim	heuchelheim	NNP	PROPN	6	dobj	B	LOC
 8	,	,	,	PUNCT	17	punct	O	
 9	'	'	''	PUNCT	17	punct	O	
 10	'	'	''	PUNCT	16	punct	O	
@@ -8208,8 +8208,8 @@
 12	on	on	IN	ADP	5	prep	I	ORG
 13	Earth	earth	NNP	PROPN	12	pobj	I	ORG
 14	claiming	claim	VBG	VERB	4	acl	O	
-15	U.S.	u.s.	NNP	PROPN	17	compound	B	ORG
-16	Marine	marine	NNP	PROPN	17	compound	I	ORG
+15	U.S.	u.s.	NNP	PROPN	17	compound	B	LOC
+16	Marine	marine	NNP	PROPN	17	compound	O
 17	Lt	lt	NNP	PROPN	14	dobj	I	ORG
 18	.	.	.	PUNCT	1	punct	O	
 19	William	william	NNP	PROPN	21	compound	B	PERSON
@@ -8663,8 +8663,8 @@
 46	,	,	,	PUNCT	38	punct	O	
 47	'	'	''	PUNCT	33	punct	O	
 48	'	'	''	PUNCT	33	punct	O	
-49	Mrs.	mrs.	NNP	PROPN	50	compound	O	
-50	Say	say	NNP	PROPN	51	nsubj	O	
+49	Mrs.	mrs.	NNP	PROPN	50	compound	B	PERSON
+50	Say	say	NNP	PROPN	51	nsubj	I   PERSON
 51	said	say	VBD	VERB	0	ROOT	O	
 52	in	in	IN	ADP	51	prep	O	
 53	an	an	DT	DET	54	det	O	
