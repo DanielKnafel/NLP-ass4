@@ -4423,8 +4423,8 @@
 25	Grants	grants	NNP	PROPN	24	pobj	B	GPE
 26	,	,	,	PUNCT	25	punct	O	
 27	N.M.	n.m.	NNP	PROPN	25	npadvmod	B	GPE
-28	Ms.	ms.	NNP	PROPN	29	compound	O	
-29	Calico	calico	NNP	PROPN	34	nsubj	B	PERSON
+28	Ms.	ms.	NNP	PROPN	29	compound	B	PERSON
+29	Calico	calico	NNP	PROPN	34	nsubj	I	PERSON
 30	,	,	,	PUNCT	29	punct	O	
 31	then	then	RB	ADV	32	advmod	O	
 32	19	19	CD	NUM	29	appos	B	CARDINAL
@@ -4970,7 +4970,7 @@
 6	Tom	tom	NNP	PROPN	7	compound	B	PERSON
 7	Defelice	defelice	NNP	PROPN	5	attr	I	PERSON
 8	of	of	IN	ADP	7	prep	O	
-9	Warwick	warwick	NNP	PROPN	8	pobj	B	PERSON
+9	Warwick	warwick	NNP	PROPN	8	pobj	B	LOC
 10	,	,	,	PUNCT	9	punct	O	
 11	who	who	WP	NOUN	12	nsubj	O	
 12	won	win	VBD	VERB	9	relcl	O	
@@ -6003,7 +6003,7 @@
 
 #id: sent2194
 #text: Mason , who headed the Centers for Disease Control in Atlanta before being appointed to the No. 2 HHS job by President Bush , said he faces a similar dilemma in the emerging fiscal 1990 budget because the AZT program is authorized at $30 million but not included in the appropriations bill scheduled for debate later this week.
-1	Mason	mason	NNP	PROPN	0	ROOT	B	ORG
+1	Mason	mason	NNP	PROPN	0	ROOT	B	PERSON
 2	,	,	,	PUNCT	1	punct	O	
 3	who	who	WP	NOUN	4	nsubj	O	
 4	headed	head	VBD	VERB	1	relcl	O	
@@ -6295,8 +6295,8 @@
 2	Bush	bush	NNP	PROPN	3	nsubj	B	PERSON
 3	announced	announce	VBD	VERB	0	ROOT	O	
 4	Tuesday	tuesday	NNP	PROPN	3	npadvmod	B	DATE
-5	the	the	DT	DET	7	det	B	GPE
-6	United	united	NNP	PROPN	7	compound	I	GPE
+5	the	the	DT	DET	7	det	O
+6	United	united	NNP	PROPN	7	compound	B	GPE
 7	States	states	NNP	PROPN	9	nsubj	I	GPE
 8	will	will	MD	VERB	9	aux	O	
 9	provide	provide	VB	VERB	3	ccomp	O	
@@ -6595,8 +6595,8 @@
 12	'	'	''	PUNCT	14	punct	O	
 13	'	'	''	PUNCT	14	punct	O	
 14	said	say	VBD	VERB	0	ROOT	O	
-15	Mrs.	mrs.	NNP	PROPN	16	compound	O	
-16	Cicippio	cicippio	NNP	PROPN	14	nsubj	B	PERSON
+15	Mrs.	mrs.	NNP	PROPN	16	compound	B	PERSON
+16	Cicippio	cicippio	NNP	PROPN	14	nsubj	I	PERSON
 17	,	,	,	PUNCT	16	punct	O	
 18	who	who	WP	NOUN	19	nsubj	O	
 19	works	work	VBZ	VERB	16	relcl	O	
@@ -7129,7 +7129,7 @@
 7	Debra	debra	NNP	PROPN	8	compound	B	PERSON
 8	Sweiger	sweiger	NNP	PROPN	6	pobj	I	PERSON
 9	of	of	IN	ADP	8	prep	O	
-10	Issaquah	issaquah	NNP	PROPN	9	pobj	B	ORG
+10	Issaquah	issaquah	NNP	PROPN	9	pobj	B	LOC
 11	,	,	,	PUNCT	12	punct	O	
 12	said	say	VBD	VERB	0	ROOT	O	
 13	King	king	NNP	PROPN	14	compound	B	GPE
@@ -7190,8 +7190,8 @@
 #text: Working with U.S. Mike Norton on the case are Assistant Ken Fimberg of Denver and Peter Murtha , a special prosecutor in the environmental crime section of the Justice Department in Washington.
 1	Working	work	VBG	VERB	0	ROOT	O	
 2	with	with	IN	ADP	1	prep	O	
-3	U.S.	u.s.	NNP	PROPN	5	compound	B	ORG
-4	Mike	mike	NNP	PROPN	5	compound	I	ORG
+3	U.S.	u.s.	NNP	PROPN	5	compound	B	LOC
+4	Mike	mike	NNP	PROPN	5	compound	B	ORG
 5	Norton	norton	NNP	PROPN	2	pobj	I	ORG
 6	on	on	IN	ADP	1	prep	O	
 7	the	the	DT	DET	8	det	O	
@@ -7288,7 +7288,7 @@
 7	of	of	IN	ADP	6	prep	O	
 8	South	south	NNP	PROPN	9	compound	B	GPE
 9	Korea	korea	NNP	PROPN	13	poss	I	GPE
-10	's	's	POS	PART	9	case	I	GPE
+10	's	's	POS	PART	9	case	O
 11	leading	lead	VBG	VERB	13	amod	O	
 12	opposition	opposition	NN	NOUN	13	compound	O	
 13	party	party	NN	NOUN	7	pobj	O	
@@ -7523,8 +7523,8 @@
 17	a	a	DT	DET	18	det	O	
 18	president	president	NN	NOUN	16	attr	O	
 19	of	of	IN	ADP	18	prep	O	
-20	the	the	DT	DET	22	det	B	GPE
-21	United	united	NNP	PROPN	22	compound	I	GPE
+20	the	the	DT	DET	22	det	O
+21	United	united	NNP	PROPN	22	compound	B	GPE
 22	States	states	NNP	PROPN	19	pobj	I	GPE
 23	who	who	WP	NOUN	24	nsubj	O	
 24	read	read	VBD	VERB	18	relcl	O	
@@ -7973,7 +7973,7 @@
 4	of	of	IN	ADP	3	prep	O	
 5	New	new	NNP	PROPN	6	compound	B	GPE
 6	York	york	NNP	PROPN	10	poss	I	GPE
-7	's	's	POS	PART	6	case	I	GPE
+7	's	's	POS	PART	6	case	O
 8	Mount	mount	NNP	PROPN	9	compound	B	ORG
 9	Sinai	sinai	NNP	PROPN	10	compound	I	ORG
 10	School	school	NNP	PROPN	4	pobj	I	ORG
@@ -7990,8 +7990,8 @@
 
 #id: sent2649
 #text: Anthropoligist Dean Falk of State University of New York at Albany supports the Kebara findings in the Science News article.
-1	Anthropoligist	anthropoligist	NNP	PROPN	3	compound	B	PERSON
-2	Dean	dean	NNP	PROPN	3	compound	I	PERSON
+1	Anthropoligist	anthropoligist	NNP	PROPN	3	compound	O
+2	Dean	dean	NNP	PROPN	3	compound	B	PERSON
 3	Falk	falk	NNP	PROPN	12	nsubj	I	PERSON
 4	of	of	IN	ADP	3	prep	O	
 5	State	state	NNP	PROPN	6	compound	B	ORG
@@ -8000,7 +8000,7 @@
 8	New	new	NNP	PROPN	9	compound	I	ORG
 9	York	york	NNP	PROPN	7	pobj	I	ORG
 10	at	at	IN	ADP	6	prep	I	ORG
-11	Albany	albany	NNP	PROPN	10	pobj	I	ORG
+11	Albany	albany	NNP	PROPN	10	pobj	B	LOC
 12	supports	support	VBZ	VERB	0	ROOT	O	
 13	the	the	DT	DET	15	det	O	
 14	Kebara	kebara	NNP	PROPN	15	compound	B	GPE
@@ -8033,8 +8033,8 @@
 17	000	000	CD	NUM	18	nummod	B	CARDINAL
 18	people	people	NNS	NOUN	24	nsubj	O	
 19	in	in	IN	ADP	18	prep	O	
-20	Buenos	buenos	NNP	PROPN	21	compound	B	GPE
-21	Aires	aires	NNP	PROPN	22	compound	I	GPE
+20	Buenos	buenos	NNP	PROPN	21	compound	B	LOC
+21	Aires	aires	NNP	PROPN	22	compound	I	LOC
 22	Province	province	NNP	PROPN	19	pobj	O	
 23	alone	alone	RB	ADV	22	advmod	O	
 24	eat	eat	VB	VERB	3	acl	O	
@@ -8820,7 +8820,7 @@
 13	commander	commander	NN	NOUN	11	pobj	O	
 14	of	of	IN	ADP	13	prep	O	
 15	the	the	DT	DET	17	det	O	
-16	Soviet	soviet	NNP	PROPN	17	compound	O	
+16	Soviet	soviet	NNP	PROPN	17	compound	B	NORP
 17	Navy	navy	NNP	PROPN	14	pobj	O	
 18	Nikolai	nikolai	NNP	PROPN	19	compound	B	PERSON
 19	Kuznetsov	kuznetsov	NNP	PROPN	13	appos	I	PERSON
@@ -8833,9 +8833,9 @@
 26	the	the	DT	DET	27	det	O	
 27	headline	headline	NN	NOUN	25	pobj	O	
 28	"	"	``	PUNCT	27	punct	O	
-29	Stalin	stalin	NNP	PROPN	31	poss	B	WORK_OF_ART
-30	's	's	POS	PART	29	case	I	WORK_OF_ART
-31	Death	death	NN	NOUN	27	appos	I	WORK_OF_ART
+29	Stalin	stalin	NNP	PROPN	31	poss	B	PERSON
+30	's	's	POS	PART	29	case	O
+31	Death	death	NN	NOUN	27	appos	O
 32	.	.	.	PUNCT	4	punct	O	
 33	"	"	''	PUNCT	4	punct	O	
 
@@ -8959,8 +8959,8 @@
 29	Turkey	turkey	NNP	PROPN	28	pobj	B	GPE
 30	:	:	:	PUNCT	34	punct	O	
 31	Prime	prime	NNP	PROPN	33	compound	O	
-32	Tansu	tansu	NNP	PROPN	33	compound	O	
-33	Ciller	ciller	NNP	PROPN	34	nsubj	B	PERSON
+32	Tansu	tansu	NNP	PROPN	33	compound	B	PERSON
+33	Ciller	ciller	NNP	PROPN	34	nsubj	I	PERSON
 34	said	say	VBD	VERB	0	ROOT	O	
 35	:	:	:	PUNCT	34	punct	O	
 36	I	i	PRP	PRON	38	nsubj	O	
@@ -9224,7 +9224,7 @@
 
 #id: sent2988
 #text: Cetin added that the ceremony , to which he was invited by his American counterpart Warren Christopher , showed once more the importance and weight of Turkey in the Balkans .
-1	Cetin	cetin	NNP	PROPN	2	nsubj	B	ORG
+1	Cetin	cetin	NNP	PROPN	2	nsubj	B	PERSON
 2	added	add	VBD	VERB	0	ROOT	O	
 3	that	that	IN	ADP	19	mark	O	
 4	the	the	DT	DET	5	det	O	
@@ -9303,9 +9303,9 @@
 8	candidates	candidate	NNS	NOUN	15	nsubj	O	
 9	for	for	IN	ADP	8	prep	O	
 10	the	the	DT	DET	14	det	O	
-11	San	san	NNP	PROPN	13	compound	O	
-12	Pedro	pedro	NNP	PROPN	13	compound	O	
-13	Sula	sula	NNP	PROPN	14	compound	O	
+11	San	san	NNP	PROPN	13	compound	B	LOC
+12	Pedro	pedro	NNP	PROPN	13	compound	I	LOC
+13	Sula	sula	NNP	PROPN	14	compound	I	LOC
 14	mayorship	mayorship	NN	NOUN	9	pobj	O	
 15	participated	participate	VBD	VERB	4	relcl	O	
 16	,	,	,	PUNCT	23	punct	O	
@@ -9771,13 +9771,13 @@
 68	on	on	IN	ADP	62	prep	O	
 69	behalf	behalf	NN	NOUN	68	pobj	O	
 70	of	of	IN	ADP	69	prep	O	
-71	the	the	DT	DET	73	det	B	GPE
-72	Croatian	croatian	NNP	PROPN	73	compound	I	GPE
+71	the	the	DT	DET	73	det	O
+72	Croatian	croatian	NNP	PROPN	73	compound	B	GPE
 73	Republic	republic	NNP	PROPN	70	pobj	I	GPE
 74	of	of	IN	ADP	73	prep	I	GPE
 75	Herceg	herceg	NNP	PROPN	77	compound	I	GPE
-76	-	-	HYPH	PUNCT	77	punct	O	
-77	Bosna	bosna	NNP	PROPN	74	pobj	O	
+76	-	-	HYPH	PUNCT	77	punct	I	GPE
+77	Bosna	bosna	NNP	PROPN	74	pobj	I	GPE
 78	,	,	,	PUNCT	62	punct	O	
 79	and	and	CC	CONJ	62	cc	O	
 80	Nikola	nikola	NNP	PROPN	81	compound	B	PERSON
@@ -9786,9 +9786,9 @@
 83	on	on	IN	ADP	94	prep	O	
 84	behalf	behalf	NN	NOUN	83	pobj	O	
 85	of	of	IN	ADP	84	prep	O	
-86	the	the	DT	DET	88	det	B	ORG
-87	Serbian	serbian	NNP	PROPN	88	compound	I	ORG
-88	Republic	republic	NNP	PROPN	85	pobj	I	ORG
+86	the	the	DT	DET	88	det	O
+87	Serbian	serbian	NNP	PROPN	88	compound	B	LOC
+88	Republic	republic	NNP	PROPN	85	pobj	I	LOC
 89	,	,	,	PUNCT	94	punct	O	
 90	in	in	IN	ADP	94	prep	O	
 91	which	which	WDT	ADJ	90	pobj	O	

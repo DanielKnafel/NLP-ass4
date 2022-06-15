@@ -112,7 +112,7 @@ def read_spacy_file(file_name):
                                     person['end'] = int(line[0]) - 1
                             else:
                                 break
-                    person['text'] = ' '.join(data['text'][person['start']:person['end']+1])
+                    person['text'] = ' '.join(data['text'][person['start']:person['end']+1]).replace(' - ','-')
                     data['persons'].append(person)
                     persons.append(person['text'])
                 # elif line[8] == 'GPE':
@@ -173,7 +173,7 @@ def read_spacy_file(file_name):
                                     location['end'] = int(line[0]) - 1
                             else:
                                 break
-                    location['text'] = ' '.join(data['text'][location['start']:location['end']+1])
+                    location['text'] = ' '.join(data['text'][location['start']:location['end']+1]).replace(' - ','-')
                     data['locations'].append(location)
                     locations.append(location['text'])
 
