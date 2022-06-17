@@ -167,7 +167,7 @@ def generate_sample(data,person,location,person_loc,location_loc):
         text.insert(person_loc[0],person)
     return ' '.join(text)
 
-def fix_biases(data,data1,biases,persons,locations):
+def fix_biases(data,data1,biases,persons,locations,marked = False):
     need_to_generate = int(len(data)*biases[1] - len(data)*biases[0])
     trues_data = [d for d in data if d['label'] == 1]
     idx = data[-1]['idx'] + 1
@@ -176,12 +176,13 @@ def fix_biases(data,data1,biases,persons,locations):
             if need_to_generate == 0:
                 break
             for d1 in data1.values():
-                if d1['text'] == d['sent1']:
+                text = d['sent1'] if not marked else d['sent1'].replace('<p> ','').replace('</p> ','').replace('<l> ','').replace('</l> ','')
+                if text == d1['text']:
                     if random.random() < 0.5:
                         person_loc = [(x['start'],x['end']) for x in d1['persons'] if x['text'] == re.split(' lives in ',d['sent2'])[0]][0]
                         location_loc = [(x['start'],x['end']) for x in d1['locations'] if x['text'] == re.split(' lives in ',d['sent2'])[1]][0]
-                        person = random.choice(persons)
-                        location = random.choice(locations)
+                        person = '<p> '+random.choice(persons) +'</p> ' if marked else random.choice(persons)
+                        location = '<l> ' + random.choice(locations) + '</l> ' if marked else random.choice(locations)
                         sent = generate_sample(d1,person,location,person_loc,location_loc)
                         data.append({'idx': idx, 'sent1': sent, 'sent2': " ".join([person,'lives in',location]), 'label': 1})
                         idx += 1
@@ -200,24 +201,28 @@ get_True_False_RE_from_files('../data/Corpus.TRAIN.txt','../data/TRAIN.annotatio
 train_data1,persons,locations = read_spacy_file('../data/Corpus.TRAIN.processed')
 train_tuples = tuples_annotations_from_data(train_data1)
 
-# dev_data1,persons_dev,locations_dev = read_spacy_file('../data/Corpus.DEV.processed')
-# dev_tuples = tuples_annotations_from_data(dev_data1)
+dev_data1,persons_dev,locations_dev = read_spacy_file('../data/Corpus.DEV.processed')
+dev_tuples = tuples_annotations_from_data(dev_data1)
 
 train_data = get_dataset_from_file_and_tuples('../data/TRAIN.annotations', train_tuples)
-# dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples)
+dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples)
 
 marked_train_data = get_dataset_from_file_and_tuples('../data/TRAIN.annotations', train_tuples,marker=True)
-# marked_dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples,marker=True)
+marked_dev_data = get_dataset_from_file_and_tuples('../data/DEV.annotations', dev_tuples,marker=True)
 
 train_data_from_annotations = read_file('../data/TRAIN.annotations')
-# dev_data_from_annotations = read_file('../data/DEV.annotations')
+dev_data_from_annotations = read_file('../data/DEV.annotations')
 
 
 
 biases = get_data_biases(train_data)
 train_data = fix_biases(train_data,train_data1,biases,persons,locations)
+marked_train_data = fix_biases(marked_train_data,train_data1,biases,persons,locations,marked=True)
+
 biases = get_data_biases(dev_data)
 dev_data = fix_biases(dev_data,dev_data1,biases,persons_dev,locations_dev)
+marked_dev_data = fix_biases(marked_dev_data,dev_data1,biases,persons_dev,locations_dev,marked=True)
+
 json_to_file(train_data, '../data/TRAIN.json')
 json_to_file(dev_data, '../data/DEV.json')
 
@@ -226,4 +231,5 @@ json_to_file(marked_dev_data, '../data/DEV.marked.json')
 
 json_to_file(train_data_from_annotations, '../data/TRAIN.from_annotations.json')
 json_to_file(dev_data_from_annotations, '../data/DEV.from_annotations.json')
+
 
