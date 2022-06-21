@@ -47,7 +47,7 @@ def full_flow(checkpoint,data_files):
 
     data_collator, tokenized_datasets, tokenizer = tokenize_data(checkpoint, data_files)
 
-    training_args = TrainingArguments("test-trainer", do_train=True, do_eval=True, num_train_epochs=12,
+    training_args = TrainingArguments("test-trainer", do_train=True, do_eval=True, num_train_epochs=20,
                                       evaluation_strategy='epoch', learning_rate=3e-5,
                                       seed=1,
                                       )
